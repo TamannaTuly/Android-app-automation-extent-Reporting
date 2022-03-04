@@ -35,14 +35,13 @@ public class LaunchApp extends BaseClass {
         wait.until(ExpectedConditions.visibilityOfElementLocated(button3)).click();
         test.log(Status.PASS, "Entering value 3");
         wait.until(ExpectedConditions.visibilityOfElementLocated(equal)).click();
-        test.log(Status.PASS, "Pressing equals");
+        test.log(Status.FAIL, "Pressing equals");
 
         String ans = wait.until(ExpectedConditions.visibilityOfElementLocated(resultbtn)).getText();
 
         Assert.assertTrue(ans.contains("5"));
         test.log(Status.PASS, "Test DONE");
     }
-
     @AfterMethod
     public void qTest(){
         driver.quit();
