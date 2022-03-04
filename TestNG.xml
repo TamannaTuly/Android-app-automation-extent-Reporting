@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="ioAppiumSuite" verbose="1">
+    <listeners>
+
+    </listeners>
+    <test name="SampleTest">
+        <classes>
+            <class name="main.LaunchApp"/>
+        </classes>
+    </test>
+</suite>
